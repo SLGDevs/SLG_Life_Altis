@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=1586;
+		nextID=1587;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14939.782,573.91876,16170.445};
-		dir[]={0.10652696,-0.47947469,0.87120384};
-		up[]={0.058206718,0.87746662,0.4760288};
-		aside[]={0.99272716,-1.0840595e-006,-0.12139315};
+		pos[]={3775.8279,55.930908,13016.519};
+		dir[]={-0.6693095,-0.73082149,-0.13397756};
+		up[]={-0.71661133,0.68256426,-0.14344649};
+		aside[]={-0.19628264,-2.4621841e-008,0.98056167};
 	};
 };
 binarizationWanted=0;
@@ -218,24 +218,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -250,6 +232,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -401,13 +401,13 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={15129.098,19.180569,17246.385};
+			position[]={14187.811,0,16289.641};
 			name="cop_spawn_4";
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=11;
-			atlOffset=1.2705688;
+			atlOffset=-19.409761;
 		};
 		class Item11
 		{
@@ -31220,20 +31220,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15144.649,17.846401,17276.334};
-						angles[]={6.2818484,2.998982,6.2805333};
+						position[]={15144.65,17.84614,17276.334};
+						angles[]={6.2818413,2.9989817,6.2805324};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_air_1""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""Coast Guard Air Base""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_air_1""; life_garage_type = ""Air""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
 						disableSimulation=1;
 					};
 					id=993;
 					type="B_RangeMaster_F";
-					atlOffset=0.096261978;
+					atlOffset=0.096000671;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31255,7 +31255,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item47
@@ -31562,20 +31581,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15114.925,17.862938,17290.582};
-						angles[]={0,2.3679433,0};
+						position[]={15114.925,17.862797,17290.582};
+						angles[]={0,2.3679407,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pyrgos District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""Coast Guard Air Base""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
 						disableSimulation=1;
 					};
 					id=1001;
 					type="B_RangeMaster_F";
-					atlOffset=0.044141769;
+					atlOffset=0.044000626;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31597,7 +31616,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item55
@@ -40428,7 +40466,7 @@ class Mission
 			name="civ_gar_1_5";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=108.01324;
+			angle=108.01323;
 			id=1382;
 			atlOffset=-0.36956978;
 		};
@@ -40544,7 +40582,7 @@ class Mission
 			};
 			id=1387;
 			type="Box_IND_AmmoVeh_F";
-			atlOffset=0.00028133392;
+			atlOffset=0.00028038025;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41013,7 +41051,7 @@ class Mission
 			};
 			id=1403;
 			type="Land_CashDesk_F";
-			atlOffset=0.00019931793;
+			atlOffset=0.00019836426;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41095,7 +41133,7 @@ class Mission
 			};
 			id=1406;
 			type="Land_CncWall4_F";
-			atlOffset=-0.34599972;
+			atlOffset=-0.34600067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41999,7 +42037,7 @@ class Mission
 			};
 			id=1470;
 			type="Land_TyreBarrier_01_line_x6_F";
-			atlOffset=-0.22733021;
+			atlOffset=-0.22733009;
 			class CustomAttributes
 			{
 				class Attribute0
