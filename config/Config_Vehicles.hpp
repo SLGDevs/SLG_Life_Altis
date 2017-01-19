@@ -80,7 +80,7 @@ class CarShops {
 
     class reb_car {
         side = "civ";
-        conditions = "";
+        conditions = "license_civ_rebel";
         vehicles[] = {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },
@@ -317,14 +317,14 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 150000;
         textures[] = { };
     };
 
     class C_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 12500;
         textures[] = {
             { "Red", "civ", {
@@ -381,7 +381,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 40000;
         textures[] = {
             { "Red", "civ", {
@@ -520,7 +520,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 30000;
         textures[] = {
             { "Dark Red", "civ", {
