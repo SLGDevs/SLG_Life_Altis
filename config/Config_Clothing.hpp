@@ -121,7 +121,8 @@ class Clothing {
             { "U_Rangemaster", "Cop Uniform", 25, "" },
             { "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
             { "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
-            { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" }
+            { "U_B_HeliPilotCoveralls", "", 1250, "license_cop_cg" },
+			{ "U_B_survival_uniform", "", 1250, "license_cop_cg" }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, "" },

@@ -45,6 +45,18 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+			
+		if (uniform player isEqualTo "U_B_HeliPilotCoveralls") then {
+            _skinName = "textures\cg\coastGuardPilot.paa";
+				player setObjectTextureGlobal [0, _skinName];
+        };
+			
+		if (uniform player isEqualTo "U_B_survival_uniform") then {
+            _skinName = "textures\cg\cg_fatigue_shirt.paa";
+			_skinNameTwo = "textures\cg\cg_fatigue_pant.paa";
+				player setObjectTextureGlobal [0, _skinName];
+				player setObjectTextureGlobal [1, _skinNameTwo];
+        };
     };
 
     case independent: {
