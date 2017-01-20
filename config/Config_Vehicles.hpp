@@ -15,6 +15,9 @@ class CarShops {
     *   OPFOR Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_EAST
     *   Independent Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_GUER
     *   Civilian Vehicle classnames can be found here: https://community.bistudio.com/wiki/Arma_3_CfgVehicles_CIV
+	*	
+	*	
+	s	Satan.
     */
     class civ_car {
         side = "civ";
@@ -25,7 +28,8 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "" },
-            { "C_Van_01_transport_F", "" }
+            { "C_Van_01_transport_F", "" },
+			{ "C_Offroad_02_unarmed_F", "" }
         };
     };
 
@@ -58,27 +62,40 @@ class CarShops {
         };
     };
 
-    class civ_air {
+    class civ_air {		
         side = "civ";
         conditions = "";
         vehicles[] = {
             { "C_Heli_Light_01_civil_F", "" },
             { "B_Heli_Light_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" }
+            { "O_Heli_Light_02_unarmed_F", "" },
+			{ "I_Heli_light_03_unarmed_F", "" },
+			{ "O_Heli_Transport_04_F", "" },
+			{ "O_Heli_Transport_04_bench_F", "" },
+			{ "B_Heli_Transport_03_unarmed_F", "" },
+			{ "I_Heli_Transport_02_F", "" },
+			{ "C_Plane_Civil_01_F", "" },
+			{ "C_Plane_Civil_01_racing_F", "" },
+			{ "B_T_VTOL_01_infantry_F", "" },
+			{ "B_T_VTOL_01_vehicle_F", "" },
+			{ "O_T_VTOL_02_infantry_F", "Easy-Breezy-Japaneezy (Infantry)" },
+			{ "O_T_VTOL_02_vehicle_F", "Easy-Breezy-Japaneezy (Vehicle)" }
         };
     };
 
-     class civ_ship {
+     class civ_ship {	
         side = "civ";
         conditions = "";
         vehicles[] = {
             { "C_Rubberboat", "" },
             { "C_Boat_Civil_01_F", "" },
-            { "B_SDV_01_F", "" }
+            { "B_SDV_01_F", "" },
+			{ "I_C_Boat_Transport_02_F", "" },
+			{ "C_Scooter_Transport_01_F", "" }
         };
     };
 
-    class reb_car {
+    class reb_car {			//Add Prowler and Quillin
         side = "civ";
         conditions = "license_civ_rebel";
         vehicles[] = {
@@ -86,7 +103,9 @@ class CarShops {
             { "B_G_Offroad_01_F", "" },
             { "O_MRAP_02_F", "" },
             { "B_Heli_Light_01_stripped_F", "" },
-            { "B_G_Offroad_01_armed_F", "" }
+            { "B_G_Offroad_01_armed_F", "" },
+			{ "B_LSV_01_unarmed_F", "" },
+			{ "O_LSV_02_unarmed_F", "" }
         };
     };
 
@@ -317,14 +336,14 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 60;
-        conditions = "license_civ_driver || {playerSide != civillian}";
-        price = 150000;
+        conditions = "license_civ_driver || {playerSide != civillian} || {playerSide != civillian}";
+        price = 1500000;
         textures[] = { };
     };
 
     class C_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver || {playerSide != civillian}";
+        conditions = "license_civ_driver || {playerSide != civillian} || {playerSide != civillian}";
         price = 12500;
         textures[] = {
             { "Red", "civ", {
@@ -362,7 +381,7 @@ class LifeCfgVehicles {
 
     class C_Kart_01_Blu_F {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 15000;
         textures[] = {};
     };
@@ -381,7 +400,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
-        conditions = "license_civ_driver || {playerSide != civillian}";
+        conditions = "license_civ_driver || {playerSide != civillian} || {playerSide != civillian}";
         price = 40000;
         textures[] = {
             { "Red", "civ", {
@@ -416,7 +435,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_Quadbike_01_F {
         vItemSpace = 25;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 2500;
         textures[] = {
             { "Brown", "cop", {
@@ -488,7 +507,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_F {
         vItemSpace = 40;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 9500;
         textures[] = {
             { "Beige", "civ", {
@@ -520,7 +539,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_driver || {playerSide != civillian}";
+        conditions = "license_civ_driver || {playerSide != civillian} || {playerSide != civillian}";
         price = 30000;
         textures[] = {
             { "Dark Red", "civ", {
@@ -540,7 +559,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Van_01_transport_F {
         vItemSpace = 100;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {playerSide != civillian}";
         price = 45000;
         textures[] = {
             { "White", "civ", {
@@ -714,4 +733,96 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
+	
+	class C_Offroad_02_unarmed_F {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {playerSide != civillian} || {playerSide != civillian}";
+		price = 8000;
+		textures[] = {};
+	};
+	
+	class I_Heli_light_03_unarmed_F {
+		vItemSpace = 120;
+		conditions = "license_civ_pilot";
+		price = 350000;
+		textures[] = {};
+	};
+	
+	class O_Heli_Transport_04_F {
+		vItemSpace = 100;
+		conditions = "license_civ_pilot";
+		price = 1000000;
+		textures[] = {};
+	};
+	
+	class O_Heli_Transport_04_bench_F : O_Heli_Transport_04_F{};
+	
+	class B_Heli_Transport_03_unarmed_F {
+		vItemSpace = 900;
+		conditions = "license_civ_pilot";
+		price = 1000000;
+		textures[] = {};
+	};
+	
+	class I_Heli_Transport_02_F {
+		vItemSpace = 800;
+		conditions = "license_civ_pilot";
+		price = 1000000;
+		textures[] = {};
+	};
+	
+	class C_Plane_Civil_01_F {
+		vItemSpace = 350;
+		conditions = "license_civ_pilot";
+		price = 150000;
+		textures[] = {};
+	};
+	
+	class C_Plane_Civil_01_racing_F : C_Plane_Civil_01_F{};
+	
+	class B_T_VTOL_01_infantry_F {
+		vItemSpace = 1150;
+		conditions = "license_civ_pilot";
+		price = 1500000;
+		textures[] = {};
+	};
+	
+	class B_T_VTOL_01_vehicle_F : B_T_VTOL_01_infantry_F{};
+	
+	class O_T_VTOL_02_infantry_F {
+		vItemSpace = 800;
+		conditions = "license_civ_pilot";
+		price = 1500000;
+		textures[] = {};
+	};
+	
+	class O_T_VTOL_02_vehicle_F : O_T_VTOL_02_infantry_F{};
+	
+	class I_C_Boat_Transport_02_F {
+		vItemSpace = 100;
+		conditions = "license_civ_boat";
+		price = 25000;
+		textures[] = {};
+	};
+	
+	class C_Scooter_Transport_01_F {
+		vItemSpace = 10;
+		conditions = "license_civ_boat";
+		price = 10000;
+		textures[] = {};
+	};
+	
+	class B_LSV_01_unarmed_F {
+		vItemSpace = 150;
+		conditions = "license_civ_driver";
+		price = 65000;
+		textures[] = {};
+	};
+	
+	class O_LSV_02_unarmed_F {
+		vItemSpace = 150;
+		conditions = "license_civ_driver";
+		price = 65000;
+		textures[] = {};
+	};
 };

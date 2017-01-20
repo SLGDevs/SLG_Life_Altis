@@ -116,23 +116,28 @@ class Clothing {
         title = "STR_Shops_C_Police";
         conditions = "";
         side = "cop";
-        uniforms[] = {
+        uniforms[] = {	
             { "NONE", "Remove Uniform", 0, "" },
             { "U_Rangemaster", "Cop Uniform", 25, "" },
             { "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
             { "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
             { "U_B_HeliPilotCoveralls", "", 1250, "license_cop_cg" },
-			{ "U_B_survival_uniform", "", 1250, "license_cop_cg" }
+			{ "U_B_survival_uniform", "", 1250, "license_cop_cg" },
+			{ "U_B_GEN_Soldier_F", "CG Patrol Uniform", 1000, "licence_cop_cg" }
         };
-        headgear[] = {
+        headgear[] = { 
             { "NONE", "Remove Hat", 0, "" },
             { "H_Cap_police", "", 25, "" },
             { "H_Beret_blk_POLICE", "", 50, "call life_coplevel >= 2" },
             { "H_HelmetB_plain_mcamo", "", 75, "call life_coplevel >= 1" },
             { "H_MilCap_mcamo", "", 100, "call life_coplevel >= 2" },
-            { "H_Booniehat_mcamo", "", 120, "call life_coplevel >= 1" }
+            { "H_Booniehat_mcamo", "", 120, "call life_coplevel >= 1" },
+			{ "H_HelmetB_light_black", "", 150, "licence_cop_cg" },
+			{ "H_PilotHelmetHeli_B", "", 150, "licence_cop_cg" },
+			{ "H_CrewHelmetHeli_B", "", 150, "licence_cop_cg" },
+			{ "H_MilCap_blue", "", 150, "licence_cop_cg" }
         };
-        goggles[] = {
+        goggles[] = {	
             { "NONE", "Remove Glasses", 0, "" },
             { "G_Squares", "", 10, "" },
             { "G_Shades_Blue", "", 20, "" },
@@ -146,21 +151,27 @@ class Clothing {
             { "G_Aviator", "", 100, "" },
             { "G_Lady_Mirror", "", 150, "" },
             { "G_Lady_Dark", "", 150, "" },
-            { "G_Lady_Blue", "", 150, "" }
+            { "G_Lady_Blue", "", 150, "" },
+			{ "G_B_Diving", "", 200, "" },
+			{ "G_O_Diving", "" , 200, ""}
         };
-        vests[] = {
+        vests[] = {	
             { "NONE", "Remove Vest", 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" },
+			{ "V_PlateCarrier2_blk", "", 3000, "call life_coplevel >= 2" },
+			{ "V_RebreatherB", "", 2500, "cop_license_cg" },
+			{ "V_RebreatherIR", "", 2500, "cop_license_cg" }
         };
-        backpacks[] = {
+        backpacks[] = {	
             { "NONE", "Remove Backpack", 0, "" },
             { "B_FieldPack_cbr", "", 500, "" },
             { "B_AssaultPack_cbr", "", 700, "" },
             { "B_Kitbag_cbr", "", 800, "" },
             { "B_Bergen_sgg", "", 2500, "" },
-            { "B_Carryall_cbr", "", 3500, "" }
+            { "B_Carryall_cbr", "", 3500, "" },
+			{ "B_ViperHarness_blk_F" , "" , 4000, "" }
         };
     };
 
@@ -196,7 +207,8 @@ class Clothing {
             { "NONE", "Remove Uniform", 0, "" }
         };
         headgear[] = {
-            { "NONE", "Remove Hat", 0, "" }
+             { "H_Cap_headphones", "", 250, "" },
+			 { "NONE", "Remove Hat", 0, "" }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, "" }

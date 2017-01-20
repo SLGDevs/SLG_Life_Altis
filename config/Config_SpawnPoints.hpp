@@ -78,10 +78,10 @@ class CfgSpawnPoints {
             };
 
             class Pyrgos {
-                displayName = "Pyrgos HQ";
+                displayName = "Coast Guard HQ";
                 spawnMarker = "cop_spawn_2";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "";
+                conditions = "license_cop_cg";
             };
 
             class Air {

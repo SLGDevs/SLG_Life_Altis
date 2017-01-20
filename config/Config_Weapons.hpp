@@ -219,8 +219,9 @@ class WeaponShops {
         name = "Altis Cop Shop";
         side = "cop";
         conditions = "";
-        items[] = {
+        items[] = {	
             { "Binocular", "", 150, -1, "" },
+			{ "Rangefinder", "", 250, -1, "" },
             { "ItemGPS", "", 100, 45, "" },
             { "FirstAidKit", "", 150, 65, "" },
             { "NVGoggles", "", 2000, 980, "" },
@@ -235,13 +236,16 @@ class WeaponShops {
 			{ "srifle_EBR_F", "", 35000, 17500, "call life_coplevel >= 2" },
 			{ "arifle_SPAR_01_blk_F", "", 35000, 17500, "call life_coplevel >= 2" },
 			{ "arifle_SPAR_03_blk_F", "", 35000, 17500, "call life_coplevel >= 2" }
+			
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 25, 100, "" },
             { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 45, 100, "" },
             { "30Rnd_65x39_caseless_mag", "", 130, 100, "" },
             { "30Rnd_9x21_Mag", "", 250, 100, "call life_coplevel >= 2" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" }
+            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
+			{ "30Rnd_556x45_Stanag", "", 200, 100, "call life_coplevel >= 2" },
+			{ "20Rnd_762x51_Mag", "", 200, 100, "call life_coplevel >= 2" }
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 100, "" },
@@ -249,7 +253,15 @@ class WeaponShops {
             { "optic_Holosight", "", 1200, 100, "call life_coplevel >= 2" },
             { "optic_Arco", "", 2500, 100, "call life_coplevel >= 2" },
             { "muzzle_snds_H", "", 2750, 100, "call life_coplevel >= 2" },
-            { "optic_MRD", "", 2750, 100, "call life_coplevel >= 2" }
+            { "optic_MRD", "", 2750, 100, "call life_coplevel >= 2" },
+			{ "optic_AMS", "", 0, 350, "" },
+			{ "optic_DMS", "", 600, 300, "" },				
+			{ "optic_ERCO_blk_F", "", 500, 250, "" },			
+			{ "optic_Nightstalker", "", 75000, 37500, "" },			
+			{ "optic_NVS", "", 1000, 500, "" },			
+			{ "optic_LRPS", "", 800, 400, "" },				
+			{ "muzzle_snds_M", "", 500, 250, "cop_license_cg" },			
+			{ "muzzle_snds_B", "", 500, 250, "cop_license_cg" }
         };
     };
 
