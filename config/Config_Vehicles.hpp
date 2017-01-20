@@ -78,8 +78,8 @@ class CarShops {
 			{ "C_Plane_Civil_01_racing_F", "" },
 			{ "B_T_VTOL_01_infantry_F", "" },
 			{ "B_T_VTOL_01_vehicle_F", "" },
-			{ "O_T_VTOL_02_infantry_F", "Easy-Breezy-Japaneezy (Infantry)" },
-			{ "O_T_VTOL_02_vehicle_F", "Easy-Breezy-Japaneezy (Vehicle)" }
+			{ "O_T_VTOL_02_infantry_F", "" },
+			{ "O_T_VTOL_02_vehicle_F", "" }
         };
     };
 
@@ -95,7 +95,7 @@ class CarShops {
         };
     };
 
-    class reb_car {			//Add Prowler and Quillin
+    class reb_car {			
         side = "civ";
         conditions = "license_civ_rebel";
         vehicles[] = {
