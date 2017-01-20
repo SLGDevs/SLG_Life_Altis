@@ -11713,5 +11713,15 @@
 		<Key ID="STR_Item_ZipTies">
 			<Original>ZipTies</Original>
 		</Key>
+		
+		<Key ID="STR_Shops_counterfitCash">
+			<Original>Fake money 4 real money</Original>
+		</Key>
+		<Key ID="STR_Item_counterfitCash">
+            <Original>Counterfit Cash</Original>
+		</Key>
+		<Key ID="STR_Item_codeCracker">
+					<Original>Code Cracker</Original>
+		</Key>
     </Package>
 </Project>
