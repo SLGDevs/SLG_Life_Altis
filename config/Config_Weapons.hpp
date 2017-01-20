@@ -231,7 +231,10 @@ class WeaponShops {
             { "SMG_02_ACO_F", "", 30000, -1, "call life_coplevel >= 2" },
             { "arifle_MX_F", "", 35000, 7500, "call life_coplevel >= 2" },
             { "hgun_ACPC2_F", "", 17500, -1, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 5000, "call life_coplevel >= 3" }
+            { "arifle_MXC_F", "", 30000, 5000, "call life_coplevel >= 3" },
+			{ "srifle_EBR_F", "", 35000, 17500, "call life_coplevel >= 2" },
+			{ "arifle_SPAR_01_blk_F", "", 35000, 17500, "call life_coplevel >= 2" },
+			{ "arifle_SPAR_03_blk_F", "", 35000, 17500, "call life_coplevel >= 2" }
         };
         mags[] = {
             { "16Rnd_9x21_Mag", "", 25, 100, "" },
