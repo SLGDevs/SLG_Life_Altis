@@ -14,6 +14,7 @@ class CfgRemoteExec {
 
         /* Client only functions */
         F(life_fnc_AAN,CLIENT)
+		F(life_fnc_AAN_Bank,CLIENT)
         F(life_fnc_addVehicle2Chain,CLIENT)
         F(life_fnc_adminID,CLIENT)
         F(life_fnc_adminInfo,CLIENT)
@@ -117,6 +118,9 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+		F(TON_fnc_handleBlastingChargeBank,SERVER)
+		
+
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -168,6 +172,7 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+		F(life_fnc_demoChargeTimerBank,ANYONE)
     };
 
     class Commands {

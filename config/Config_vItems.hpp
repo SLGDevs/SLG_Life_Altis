@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "codeCracker" };
     };
 
     class med_market {
@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "gagkit", "zipties" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "gagkit", "zipties","codeCracker" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "gagkit", "zipties", "codeCracker" };
     };
 
     class wongs {
@@ -127,6 +127,14 @@ class VirtualShops {
         conditions = "";
         items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
     };
+	
+	class counterfitCash {
+        name = "STR_Shops_CounterfitCash";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "counterfitCash" };
+	};
 };
 
 /*
@@ -879,4 +887,26 @@ class VirtualItems {
         edible = -1;
         icon = "icons\ziptie.paa";
     };
+	
+	class codeCracker {
+        variable = "codeCracker";
+        displayName = "STR_Item_codeCracker";
+        weight = 2;
+        buyPrice = 14000;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\codeCracker.paa";
+	};
+
+	class counterfitCash {
+			variable = "counterfitCash";
+			displayName = "STR_Item_counterfitCash";
+			weight = 4;
+			buyPrice = -1;
+			sellPrice = 52500;
+			illegal = true;
+			edible = -1;
+        icon = "icons\counterfitCash.paa";
+	};
 };

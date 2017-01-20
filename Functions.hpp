@@ -104,6 +104,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class demoChargeTimerBank {};
 		
 		/*							*/
 		
@@ -174,6 +175,9 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+		class safeInventoryBank {};  
+		class safeOpenBank {};  
+		class safeTakeBank {};
     };
 
     class Functions {
@@ -281,6 +285,7 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+		class codeCracker {};
     };
 
     class Medical_System {
