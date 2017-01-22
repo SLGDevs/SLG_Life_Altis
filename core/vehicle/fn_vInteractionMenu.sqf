@@ -138,7 +138,6 @@ if(license_civ_rebel) then {
 	};
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-};
 
 if (playerSide isEqualTo independent) then {
 
